@@ -13,6 +13,8 @@ import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import {RouterModule, Routes} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
+import {PanelMenuModule} from "primeng/panelmenu";
+import {TableModule} from "primeng/table";
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -38,7 +40,9 @@ const appRoutes: Routes = [
     RouterModule,
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    PanelMenuModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
