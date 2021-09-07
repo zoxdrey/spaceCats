@@ -8,3 +8,17 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-table {
+  margin: 10px;
+  border: solid 1px black;
+}
+
+.main-menu {
+  margin: 10px;
+}
