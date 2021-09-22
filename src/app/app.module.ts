@@ -17,6 +17,10 @@ import {PanelMenuModule} from "primeng/panelmenu";
 import {TableModule} from "primeng/table";
 import {MenubarModule} from "primeng/menubar";
 import {InputTextModule} from "primeng/inputtext";
+import {CardModule} from "primeng/card";
+import {ToolbarModule} from "primeng/toolbar";
+import {ButtonModule} from "primeng/button";
+import {RippleModule} from "primeng/ripple";
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -46,7 +50,11 @@ const appRoutes: Routes = [
     PanelMenuModule,
     TableModule,
     MenubarModule,
-    InputTextModule
+    InputTextModule,
+    CardModule,
+    ToolbarModule,
+    ButtonModule,
+    RippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
