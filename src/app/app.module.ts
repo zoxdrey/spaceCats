@@ -21,6 +21,7 @@ import {CardModule} from "primeng/card";
 import {ToolbarModule} from "primeng/toolbar";
 import {ButtonModule} from "primeng/button";
 import {RippleModule} from "primeng/ripple";
+import {DialogModule} from "primeng/dialog";
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -54,7 +55,8 @@ const appRoutes: Routes = [
     CardModule,
     ToolbarModule,
     ButtonModule,
-    RippleModule
+    RippleModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

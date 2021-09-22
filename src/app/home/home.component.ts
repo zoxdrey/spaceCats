@@ -18,6 +18,8 @@ export class HomeComponent implements OnInit {
   items: MenuItem[] = [];
   users: Users[] = [];
 
+  display: boolean = false;
+
   constructor() {
   }
 
@@ -121,6 +123,11 @@ export class HomeComponent implements OnInit {
         ]
       }
     ];
+  }
+
+
+  showDialog() {
+    this.display = true;
   }
 
 }
