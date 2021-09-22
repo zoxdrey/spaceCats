@@ -1,6 +1,14 @@
-<div class="main">
-  <p-panelMenu [model]="items" [style]="{'width':'300px'}" class="main-menu"></p-panelMenu>
-  <p-table [value]="users" class="main-table">
+<p-menubar [model]="items">
+  <ng-template pTemplate="start">
+    <img src="assets/61RNB80nw6L.jpg" height="40" class="p-mr-2">
+  </ng-template>
+  <ng-template pTemplate="end">
+    <input type="text" pInputText placeholder="Search">
+  </ng-template>
+</p-menubar>
+<div class="main p-grid">
+  <p-panelMenu [model]="items" [style]="{'width':'300px'}" class="main-menu p-col"></p-panelMenu>
+  <p-table [value]="users" class="main-table p-col">
     <ng-template pTemplate="header">
       <tr>
         <th>№</th>

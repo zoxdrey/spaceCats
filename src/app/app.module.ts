@@ -15,6 +15,8 @@ import {RouterModule, Routes} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
 import {PanelMenuModule} from "primeng/panelmenu";
 import {TableModule} from "primeng/table";
+import {MenubarModule} from "primeng/menubar";
+import {InputTextModule} from "primeng/inputtext";
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -42,7 +44,9 @@ const appRoutes: Routes = [
     HttpClientModule,
     FormsModule,
     PanelMenuModule,
-    TableModule
+    TableModule,
+    MenubarModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]
